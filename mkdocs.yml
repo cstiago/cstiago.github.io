@@ -1,1 +1,66 @@
-site_name: Tiago R. Cunha
+site_name: Tiago Cunha
+site_author: Tiago Rocha Cunha
+site_description: Personal website.
+site_url: https://cstiago.github.io/
+
+docs_dir: docs/
+
+nav:
+  - Intro: index.md
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: fontawesome/solid/hexagon-nodes
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    # - navigation.expand
+    # - navigation.path
+    # - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    # - toc.follow
+    # - toc.integrate
+    - search.suggest
+    # - search.highlight
+    - search.share
+    # - header.autohide
+    # - announce.dismiss
+
+extra:
+  generator: false
+  social:
+    - name: cstiago on GitHub
+      icon: fontawesome/brands/github
+      link: https://github.com/cstiago
+
+    - name: Tiago Cunha on LinkedIn
+      icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/cstiago
+
+copyright: |
+  &copy; 2025 Tiago Rocha Cunha
+
