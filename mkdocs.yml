@@ -6,11 +6,12 @@ site_url: https://cstiago.github.io/
 docs_dir: docs/
 
 nav:
-  - Intro: index.md
+  - Home: index.md
 
 theme:
   name: material
   language: en
+  favicon: assets/e699.png
   icon:
     logo: fontawesome/solid/hexagon-nodes
 
