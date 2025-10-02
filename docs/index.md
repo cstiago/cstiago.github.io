@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# Home
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome! &#x30C4;
 
-## Commands
+## Intro
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+I'm Tiago R. Cunha and I love facing challenges. I'm interested in math, competitive programming and low-level projects. I also enjoy running, lemon pie and throwing cards.
 
-## Project layout
+## Education
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+AWS certified Developer Associate pursuing a Bachelor's degree in Science & Technology and Computer Science from the [Federal University of ABC](https://www.ufabc.edu.br/) (UFABC), with a technical degree in Information Technology from the [Federal Institute of São Paulo](https://www.ifsp.edu.br/index.php) (IFSP).
+
