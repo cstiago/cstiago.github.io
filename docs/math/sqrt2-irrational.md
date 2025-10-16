@@ -2,7 +2,15 @@
 
 $\boxed{\text{Proposition. } \sqrt{2} \text{ is irrational.}}$
 
-$\text{Proof. }$ Assume that $\sqrt{2} \in \mathbb{Q}$, which for some $a, b \in \mathbb{Z}$, can be expressed as an irreducible fraction in the form of $\sqrt{2} = \frac{a}{b}$, given $b \ne 0$ and $\gcd(a, b) = 1$.
+## Definitions
+
+$$\forall x \in \mathbb{Q} \iff \forall a, b \in \mathbb{Z}(b \not= 0 \land \gcd(a, b) = 1 \land x = \frac{a}{b}) {{label('def-q')}}$$
+
+$$\forall x \in \mathbb{Z}(x^2\pmod 2 \equiv x\pmod 2) {{label('def-parity')}}$$
+
+## Proof
+
+Assume that $\sqrt{2} \in \mathbb{Q}$, which for some $a, b \in \mathbb{Z}$, can be expressed as an irreducible fraction in the form of $\sqrt{2} = \frac{a}{b}$, given $b \ne 0$ and $\gcd(a, b) = 1$.
 
 Squaring both sides of the equation, $(\sqrt{2})^2 = (\frac{a}{b})^2$. Applying radical and exponent properties, $2 = \frac{a^2}{b^2}$. Multiplying both sides by $b^2$, $a^2 = 2b^2$.
 
