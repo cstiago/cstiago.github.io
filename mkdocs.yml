@@ -84,6 +84,10 @@ markdown_extensions:
   - footnotes
   - md_in_html
 
+plugins:
+    - search
+    - macros
+
 extra_javascript:
   - config/katex.js
   - label-ref-eqref-katex.js
