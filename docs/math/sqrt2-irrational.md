@@ -4,7 +4,7 @@ $\boxed{\text{Proposition. } \sqrt{2} \text{ is irrational.}}$
 
 ## Definitions
 
-$$\forall x: x \in \mathbb{Q} \iff \forall a, b \in \mathbb{Z}(b \not= 0 \land \gcd(a, b) = 1 \land x = \frac{a}{b}) {{label('def-q')}}$$
+$$\forall x \in \mathbb{R}: x \in \mathbb{Q} \iff \exists a, b \in \mathbb{Z}(b \not= 0 \land \gcd(a, b) = 1 \land x = \frac{a}{b}) {{label('def-q')}}$$
 
 $$\forall x \in \mathbb{Z}: x^2 \equiv x \pmod 2 {{label('def-parity')}}$$
 
