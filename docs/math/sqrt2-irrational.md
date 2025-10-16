@@ -1,12 +1,12 @@
-# Proof that $\sqrt{2}$ is irrational
+# $\sqrt{2}$ is irrational
 
 $\boxed{\text{Proposition. } \sqrt{2} \text{ is irrational.}}$
 
 ## Definitions
 
-$$\forall x \in \mathbb{Q} \iff \forall a, b \in \mathbb{Z}(b \not= 0 \land \gcd(a, b) = 1 \land x = \frac{a}{b}) {{label('def-q')}}$$
+$$\forall x: x \in \mathbb{Q} \iff \forall a, b \in \mathbb{Z}(b \not= 0 \land \gcd(a, b) = 1 \land x = \frac{a}{b}) {{label('def-q')}}$$
 
-$$\forall x \in \mathbb{Z}(x^2\pmod 2 \equiv x\pmod 2) {{label('def-parity')}}$$
+$$\forall x \in \mathbb{Z}: x^2 \equiv x \pmod 2 {{label('def-parity')}}$$
 
 ## Proof
 
