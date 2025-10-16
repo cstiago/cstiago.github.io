@@ -1,12 +1,18 @@
-eqs = dict()
+eqs = {}
+
+def handle_eq(eq: str) -> int:
+    if eq not in eqs:
+        eqs[eq] = len(eqs) + 1
+    return eqs[eq]
 
 def define_env(env):
 
     @env.macro
     def label(eq: str):
-        eqs[eq] = len(eqs) + 1
-        return f'\\label{{{eqs[eq]}}}\\tag{{{eqs[eq]}}}'
+        ref = handle_eq(eq)
+        return f'\\label{{{ref}}}\\tag{{{ref}}}'
 
     @env.macro
     def eqref(eq: str):
-        return f'\\eqref{{{eqs[eq]}}}'
+        ref = handle_eq(eq)
+        return f'\\eqref{{{ref}}}'
