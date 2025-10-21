@@ -4,63 +4,56 @@ $\boxed{\text{Theorem A. } \sqrt{2} \notin \mathbb{Q}}$
 
 $\text{Proof. }$
 
-01. $\vdash \neg (A)$
-
-02. $(1) \implies \sqrt{2} \in \mathbb{Q}$
+$\vdash \neg (\sqrt{2} \notin \mathbb{Q}) \implies \sqrt{2} \in \mathbb{Q}$
 
 $\text{Definition B. } \mathbb{Q} := \{\frac{a}{b} \mid b \not= 0 \land \gcd(a, b) = 1\}$
 
-03. $(B) \implies \forall x \in \mathbb{R}: x \in \mathbb{Q} \iff \exists a, b \in \mathbb{Z}(b \not= 0 \land \gcd(a, b) = 1 \land x = \frac{a}{b})$
+Let $m, n \in \mathbb{Z}, n \not= 0, \gcd(m, n) = 1$:
 
-04. $(2) \land (3) \implies \exists a, b \in \mathbb{Z}(b \not= 0 \land \gcd(a, b) = 1 \land \sqrt{2} = \frac{a}{b})$
+$\sqrt{2} = \frac{m}{n}$
 
-5. Let $a, b \in \mathbb{Z}: \sqrt{2} = \frac{a}{b}$
+$(\sqrt{2})^2 = (\frac{m}{n})^2$
 
-06. $(5) \implies (\sqrt{2})^2 = (\frac{a}{b})^2$
+$2 = \frac{m^2}{n^2}$
 
-07. $(6) \implies 2 = \frac{a^2}{b^2}$
+$2n^2 = m^2$
 
-08. $(7) \implies 2b^2 = a^2$
+$\text{Lemma C. } \forall a \in \mathbb{Z}: a^2 \equiv a \pmod 2$
 
-$\text{Lemma C. } \forall y \in \mathbb{Z}: y^2 \equiv y \pmod 2$
+$m^2 \equiv m \pmod 2$
 
-09. $(C) \land (4) \implies a^2 \equiv a \pmod 2$
+$\text{Lemma D. } \forall a, b, c \in \mathbb{Z}: ab = c \implies a \mid c \land b \mid c$
 
-$\text{Lemma D. } \forall z \in \mathbb{Z}: z \implies z^2 \in \mathbb{Z}$
+$2n^2 = m^2 \implies 2 \mid m^2 \land n^2 \mid m^2$
 
-$\text{Lemma E. } \forall m, n, o\in \mathbb{Z}: mn = o \implies m \mid o \land n \mid o$
+$\text{Lemma E. } \forall a, b, c \in \mathbb{Z}: a \equiv b \pmod c \iff \exists d \in \mathbb{Z}(a = cd + b)$
 
-10. $(4) \land (D) \implies b^2 \in \mathbb{Z}$
+$2n^2 = m^2 \implies m^2 \equiv 0 \pmod 2$
 
-11. $(8) \land (10) \land (E) \implies 2 \mid a^2 \land b^2 \mid a^2$
+$m^2 \equiv 0 \pmod 2 \land m^2 \equiv m \pmod 2 \implies m \equiv 0 \pmod 2$
 
-$\text{Lemma F. } \forall i, j, k \in \mathbb{Z}: i \equiv j \pmod k \implies \exists l \in \mathbb{Z}(k > j \land i = lk + j)$
+$\exists a \in \mathbb{Z}: m = 2a$
 
-12. $(F) \implies i - j = lk$
+Let $k \in \mathbb{Z}: m = 2k$
 
-13. $(E) \land (12) \implies l \mid (i-j) \land k \mid (i-j)$
+$2n^2 = m^2$
 
-14. $(9) \land (11) \implies 2 \mid a$
+$2n^2 = (2k)^2$
 
-15. $(8) \land (14) \implies \exists p \in \mathbb{Z}(2b^2 = (2p)^2$
+$2n^2 = 4k^2$
 
-16. $(15) \implies 2b^2 = 4p^2$
+$n^2 = 2k^2$
 
-17. $(16) \implies b^2 = 2p^2$
+$n^2 = 2k^2 \implies n^2 \equiv 0 \pmod 2$
 
-18. $(17) \land (D) \implies \exists r \in \mathbb{Z}(b^2 = 2r)$
+$n^2 \equiv 0 \pmod 2 \land n^2 \equiv n \pmod 2 \implies n \equiv 0 \pmod 2$
 
-19. $(18) \land (E) \implies 2 \mid b^2 \land r \mid b^2$
+$\exists a \in \mathbb{Z}: n = 2a$
 
-20. $(19) \land (C) \implies 2 \mid b$
+Let $l \in \mathbb{Z}: n = 2l$
 
-$\text{Lemma G. } \forall s, t, u \in \mathbb{Z}: s \mid t \land s \mid u \implies \gcd(t, u) \ge s$
+$\text{Lemma F. } \forall a, b, c, d, e \in \mathbb{Z}: a = cd \land b = ce \implies \gcd(a, b) \ge |c|$
 
-21. $(14) \land (20) \land (G) \implies \gcd(a, b) \ge 2$
+$m = 2k \land n = 2l \implies \gcd(m, n) \ge 2 \text{↯}$
 
-22. $(21) \land (5) \implies \text{↯}$
-
-23. $(22) \land (1) \implies (A)$
-
-24. $\therefore \sqrt{2} \notin \mathbb{Q}$ $\square$
-
+$\therefore \sqrt{2} \notin \mathbb{Q} \text{ } \square$
