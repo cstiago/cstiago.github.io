@@ -10,7 +10,6 @@ def handle_eq(eq: str, comp: str='') -> str:
     return ref
 
 def define_env(env):
-
     @env.macro
     def label(eq: str, comp: str='') -> str:
         ref = handle_eq(eq, comp)
@@ -20,3 +19,8 @@ def define_env(env):
     def eqref(eq: str, comp: str='') -> str:
         ref = handle_eq(eq, comp)
         return f'\\eqref{{{ref}}}'
+
+    @env.macro
+    def t(left: str, right: str) -> str:
+        return f"<div style='display: flex; width: 100%;'><div style='float: left; width: 50%; text-align: center;'>{left}</div><div style='float: right; width: 50%; text-align: left;'>{right}</div></div>"
+
