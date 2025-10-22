@@ -4,7 +4,11 @@ $\boxed{\text{Theorem A. } \sqrt{2} \notin \mathbb{Q}}$
 
 $\text{Proof. }$
 
-$\vdash \neg (\sqrt{2} \notin \mathbb{Q}) \implies \sqrt{2} \in \mathbb{Q}$
+$\vdash \neg A$
+
+$$\neg (\sqrt{2} \notin \mathbb{Q})$$
+
+$$\sqrt{2} \in \mathbb{Q}$$
 
 $\text{Definition B. } \mathbb{Q} := \{\frac{a}{b} \mid b \not= 0 \land \gcd(a, b) = 1\}$
 
