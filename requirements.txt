@@ -2,3 +2,4 @@ mkdocs
 mkdocs-material
 mkdocs-macros-plugin
 mkdocs-awesome-nav
+mkdocs-awesome-pages-plugin
