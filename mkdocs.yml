@@ -35,7 +35,7 @@ theme:
     # - navigation.tabs.sticky
     # - navigation.sections
     # - navigation.expand
-    # - navigation.path
+    - navigation.path
     # - navigation.prune
     - navigation.indexes
     - navigation.top
@@ -85,12 +85,13 @@ markdown_extensions:
   - md_in_html
 
 plugins:
-    - search
-    - macros
+  - search
+  - macros
+  - awesome-nav
 
 extra_javascript:
   - config/katex.js
-  - label-ref-eqref-katex.js
+  - config/label-ref-eqref-katex.js
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
@@ -103,12 +104,10 @@ extra_css:
 extra:
   generator: false
   social:
-    - name: cstiago on GitHub
-      icon: fontawesome/brands/github
+    - icon: fontawesome/brands/github
       link: https://github.com/cstiago
 
-    - name: Tiago Cunha on LinkedIn
-      icon: fontawesome/brands/linkedin
+    - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/cstiago
 
 copyright: |
