@@ -6,51 +6,71 @@ $\text{Proof. }$
 
 $\vdash \neg A$
 
-$$\neg (\sqrt{2} \notin \mathbb{Q})$$
-
-$$\sqrt{2} \in \mathbb{Q}$$
+$$
+\begin{align}
+\neg (\sqrt{2} &\notin \mathbb{Q})\\
+\sqrt{2} &\in \mathbb{Q}
+\end{align}
+$$
 
 $\text{Definition B. } \mathbb{Q} := \{\frac{a}{b} \mid b \not= 0 \land \gcd(a, b) = 1\}$
 
 $(m, n) := (a, b) \in \mathbb{Z}^2: b \not= 0 \land \gcd(a, b) = 1 \land \sqrt{2} = \frac{a}{b}$
 
-$$\sqrt{2} = \frac{m}{n}$$
-
-$$(\sqrt{2})^2 = (\frac{m}{n})^2$$
-
-$$2 = \frac{m^2}{n^2}$$
-
-$$2n^2 = m^2$$
+$$
+\begin{align}\\
+\sqrt{2} &= \frac{m}{n}\\
+(\sqrt{2})^2 &= (\frac{m}{n})^2\\
+2 &= \frac{m^2}{n^2}\\
+2n^2 &= m^2
+\end{align}
+$$
 
 $\text{Lemma C. } \forall a \in \mathbb{Z}: a^2 \equiv a \pmod 2$
 
-$$m^2 \equiv m \pmod 2$$
+$$
+\begin{align}
+m^2 &\equiv m \pmod 2
+\end{align}
+$$
 
 $\text{Lemma D. } \forall a, b, c \in \mathbb{Z}: a \equiv b \pmod c \iff \exists d \in \mathbb{Z}(a = cd + b)$
 
-$$2n^2 = m^2$$
+$$
+\begin{align}
+2n^2 &= m^2\\
+m^2 &\equiv 0 \pmod 2
+\end{align}
+$$
 
-$$m^2 \equiv 0 \pmod 2$$
 
 $m^2 \equiv m \pmod 2 \land m^2 \equiv 0 \pmod 2 \implies m \equiv 0 \pmod 2$
 
-$$\exists a \in \mathbb{Z}: m = 2a$$
+$$
+\begin{align}
+\exists a \in \mathbb{Z}: m &= 2a
+\end{align}
+$$
 
 $k := a \in \mathbb{Z}: m = 2a$
 
-$$2n^2 = m^2$$
-
-$$2n^2 = (2k)^2$$
-
-$$2n^2 = 4k^2$$
-
-$$n^2 = 2k^2$$
-
-$$n^2 \equiv 0 \pmod 2$$
+$$
+\begin{align}
+2n^2 &= m^2\\
+2n^2 &= (2k)^2\\
+2n^2 &= 4k^2\\
+n^2 &= 2k^2\\
+n^2 &\equiv 0 \pmod 2
+\end{align}
+$$
 
 $n^2 \equiv 0 \pmod 2 \land n^2 \equiv n \pmod 2 \implies n \equiv 0 \pmod 2$
 
-$$\exists a \in \mathbb{Z}: n = 2a$$
+$$
+\begin{align}
+\exists a \in \mathbb{Z}: n &= 2a
+\end{align}
+$$
 
 $l := a \in \mathbb{Z}: n = 2a$
 
