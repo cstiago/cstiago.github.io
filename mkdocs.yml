@@ -87,7 +87,7 @@ markdown_extensions:
 plugins:
   - search
   - macros
-  - awesome-nav
+  # - awesome-nav
   - awesome-pages
 
 extra_javascript:
@@ -100,6 +100,7 @@ extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
+  - config/style.css
   - https://unpkg.com/katex@0/dist/katex.min.css
 
 extra:
