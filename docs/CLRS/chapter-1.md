@@ -82,16 +82,18 @@ $$
 \end{align}
 $$
 
-From that, we can derive that:
+From that, we can simplify and isolate terms on $n$.
 
 $$
 \begin{align}
 \frac{8n^2}{8n} &< \frac{64n\lg{n}}{8n}\\
-n &< 8\lg{n}
+n &< 8\lg{n}\\
+\frac{n}{\lg{n}} &< \frac{8\lg{n}}{\lg{n}}\\
+\frac{n}{\lg{n}} &< 8
 \end{align}
 $$
 
-This turns out to be a transcendental inequality, since the left term is linear and the right term is logarithmic on $n$. Therefore, it's not possible to solve for $n$ algebraically. However, we can analyse its behavior by manipulating the inequality and defining a function $f(x)$ as the following:
+This turns out to be a transcendental inequality, since the left term is both linear and logarithmic on $n$. Therefore, it's not possible to solve for $n$ algebraically. However, we can analyse its behavior by manipulating the inequality and defining a function $f(x)$ as the following:
 
 $$
 \begin{align}
@@ -189,12 +191,26 @@ Choosing the first integer of each interval as a guess for finding each root, we
 |6|43.559260|0.000000|
 </div>
 
-From that, we achieve $x' \approx 1.099997$ and $x'' \approx 43.559260$. Knowing that $f(x) > 0$ for $x' < x < x''$, the solution for the inequality must be the interval (1.099997, 43.559260).
+From that, we achieve $x' \approx 1.099997$ and $x'' \approx 43.559260$. Knowing that $f(x) > 0$ for $x' < x < x''$, the solution for the inequality must be the interval $(1.099997, 43.559260)$.
 
 Finally, accounting for the domain of $s_x(n)$ as $\mathbb{N}$, insertion sort will beat merge sort for $2 \le n \le 43$.
 
 ### 1.2-3
 > What is the smallest value of n such that an algorithm whose running time is $100n^2$ runs faster than an algorithm whose running time is $2^n$ on the same machine?
 
+Let $t_x(n)$ be a function for the running time of an algorithm $x$ given an input $n$ in the same machine.
 
+$$
+\begin{align}
+t_a: \mathbb{N} &\to \mathbb{N} & t_b: \mathbb{N} &\to \mathbb{N}\\
+n &\mapsto 100n^2 & n &\mapsto 2^n\\
+\end{align}
+$$
 
+Given that algorithm $a$ is faster than $b$, it must hold that $t_a(n) < t_b(n)$.
+
+$$
+\begin{align}
+100n^2 &< 2^n\\
+\end{align}
+$$
