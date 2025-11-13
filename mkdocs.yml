@@ -89,6 +89,7 @@ plugins:
   - macros
   # - awesome-nav
   - awesome-pages
+  - git-revision-date-localized
 
 extra_javascript:
   - config/katex.js
