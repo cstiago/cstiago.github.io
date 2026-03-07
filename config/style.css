@@ -1,0 +1,9 @@
+.table-row {
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.md-typeset .center-table :is(td,th):not([align]) {
+	text-align: initial;
+}
