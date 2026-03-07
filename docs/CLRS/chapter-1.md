@@ -46,7 +46,7 @@ The beginning of the travel is modeled as the source node and the destination pl
 ### 1.2-2
 > Suppose we are comparing implementations of insertion sort and merge sort on the same machine. For inputs of size $n$, insertion sort runs in $8n^2$ steps, while merge sort runs in $64n \lg{n}$ steps. For which values of n does insertion sort beat merge sort?
 
-Let $f_x(n)$ be a function for the number of steps obtained through the implementation of an arbitrary algorithm $x$. We define $s_i(n)$ for insertion sort and $f_m(n)$ for merge sort. Since the number of steps for an algorithm is a positive integer, we round up to the nearest integer.
+Let $f_x(n)$ be a function for the number of steps obtained through the implementation of an arbitrary algorithm $x$. We define $s_i(n)$ for insertion sort and $s_m(n)$ for merge sort. Since the number of steps for an algorithm is a positive integer, we round up to the nearest integer.
 
 $$
 \begin{align}
@@ -74,7 +74,7 @@ $$
 \end{align}
 $$
 
-Also, for all $b \in \mathbb{N}$, exists $c \in \mathbb{R^+}$ such that if $b \le \lceil c \rceil$, then $b \le c$.
+Also, for all $b \in \mathbb{N}$, exists $c \in \mathbb{R^+}$ such that if $b < \lceil c \rceil$, then $b < c$.
 
 $$
 \begin{align}
